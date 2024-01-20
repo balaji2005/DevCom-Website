@@ -1,0 +1,282 @@
+html, body {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+}
+
+h1 {
+    margin-left: 50px;
+    position: fixed;
+}
+
+/* Navigation Links */
+
+@media screen and (max-width: 800px) {
+    .nav-link {
+        visibility: hidden;
+    }
+
+    #menu {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #menu, #scroll-menu {
+        display: none;
+    }
+}
+
+#menu {
+    width: 75px;
+    height: 75px;
+}
+
+#scroll-menu {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    left: calc(100vh - 224px);
+    top: 75px;
+    width: 224px;
+    background-color: rgb(10, 10, 10);
+    height: calc(66*5px);
+    animation: open-menu;
+    animation-duration: 2s;
+}
+
+@keyframes open-menu {
+    from {
+        top: -calc(66*5px);
+    }
+    top {
+        top: 75px;
+    }
+}
+
+#nav {
+    /* margin: 10px; */
+    background-color: rgb(10, 10, 10)       ;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 2%;
+    height: 75px;
+    position: fixed;
+    width: -webkit-fill-available;
+    /* height: 40px; */
+}
+
+.nav-link, .nav-link-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    color: antiquewhite;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.nav-link {
+    width: 100px;
+}
+
+.nav-link-mobile {
+    width: 200px;
+    background-color: rgb(10, 10, 10);
+}
+
+.nav-link:hover .nav-link-mobile:hover{
+    font-size: 20px;
+    /* text-shadow: 0px 10px 3px rgb(200, 200, 200); */
+}
+
+.nav-link:after, .nav-link-mobile:after{
+    /* border: 1px solid azure;
+    border-radius: 2px; */
+    margin-top: 10px;
+    content: '';
+    display: block;
+    /* animation: select;
+    animation-duration: 500ms; */
+    /* border-bottom: 1px solid azure; */
+    width: 100%;
+    font-size: 24px;
+}
+
+.nav-link:hover:after, .nav-link-mobile:hover:after{
+    /* border: 1px solid azure;
+    border-radius: 2px; */
+    margin-top: 10px;
+    content: '';
+    display: block;
+    animation: select;
+    animation-duration: 500ms;
+    border-bottom: 1px solid azure;
+    width: 100%;
+    font-size: 24px;
+    text-shadow: 0px 10px 3px rgb(200, 200, 200);
+}
+
+.nav-link-mobile:before {
+    margin-bottom: 10px;
+    content: '';
+    display: block;
+    /* animation: select;
+    animation-duration: 500ms; */
+    /* border-bottom: 1px solid azure; */
+    width: 100%;
+    font-size: 24px;
+}
+
+.nav-link-mobile:hover:before {
+    margin-bottom: 10px;
+    content: '';
+    display: block;
+    animation: select;
+    animation-duration: 500ms;
+    border-top: 1px solid azure;
+}
+  
+@keyframes select {
+    from {
+        width: 0;
+        font-size: 19px;
+    }
+
+    to {
+        width: 100%;
+        font-size: 24px;
+    }
+}
+
+/* @keyframes enlarge {
+
+    from {
+        font-size: 19px;
+    }
+
+    to {
+        font-size: 22px;
+    }
+} */
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    /* font-size: 19px; */
+}
+
+/* #hobbies {
+    height: 100000px;
+} */
+
+/* Hobbies */
+
+/* .hobby {
+    margin: 10px;
+    height: 1000px;
+}
+
+#hobby1 {
+    background-color: blue;
+}
+
+#hobby2 {
+    background-color: green;
+}
+
+#hobby3 {
+    background-color: yellow;
+} */
+
+/* Content */
+
+.data {
+    display: none;
+    flex-direction: column;
+}
+
+#content {
+    width: calc(96% - 100px);
+    min-height: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 50px;
+}
+
+/* Contact Form */
+
+#contact-me {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+input, #message, #contact-form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="text"], input[type="email"] {
+    width: 600px;
+    border: 0;
+}
+
+input[type="text"]:focus-visible, input[type="email"]:focus-visible, textarea:focus-visible {
+    outline: none;
+    
+}
+
+input {
+    margin: 20px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+#message {
+    width: 600px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    width: 100px;
+    padding-left: 0;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    /* padding: 15px; Some padding */
+    border-radius: 26px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    height: 54px;
+    width: 54px;
+    align-items: center;
+    justify-content: center;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}

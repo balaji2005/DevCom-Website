@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <h1>My Portfolio</h1>
+        <div id="nav">
+            <div class="nav-link">
+                <nav><a href="#contact" data-value="3" class="link">Contact Me</a></nav>
+            </div>
+            <div class="nav-link">
+                <nav><a href="#hobby3" data-value="2" class="link">Hobby 3</a></nav>
+            </div>
+            <div class="nav-link">
+                <nav><a href="#hobby2" data-value="1" class="link">Hobby 2</a></nav>
+            </div>
+            <div class="nav-link">
+                <nav><a href="#hobby1" data-value="0" class="link">Hobby 1</a></nav>
+            </div>
+            <div class="nav-link">
+                <nav><a href="index.html" data-value="4" class="link">Home</a></nav>
+            </div>
+        </div>
+
+        <!--
+            <div id="hobbies">
+                <div class="hobby" id="hobby1"></div>
+                <div class="hobby" id="hobby2"></div>
+                <div class="hobby" id="hobby3"></div>
+            </div>
+
+            <div id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Message...">
+                    <input type="submit">
+                </form>
+            </div>
+        -->
+        <div id="content">
+            <div class="data" id="page3">
+                <h2 id="contact-me">Contact Me</h2>
+                <form id="contact-form" action="https://mail.google.com" target="_blank">
+                    <input type="hidden" name="view" value="cm">
+                    <input type="hidden" name="fs" value="1">
+                    <!-- <input type="hidden" name="compose" value="new"> -->
+                    <input type="hidden" name="to" value="balajikaredla1235@gmail.com">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject" name="su">
+                    <!-- <input type="text" id="message" placeholder="Message..."> -->
+                    <textarea id="message" placeholder="Message..." name="body"></textarea>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+          </svg></div>
+        <script src="script.js"></script>
+    </body>
+</html>

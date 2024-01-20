@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h1>My Portfolio</h1>
+        <div id="nav">
+            <div id="menu" style="flex-direction: column; align-items: center;justify-content: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+            <div class="nav-link" data-value="3">
+                <nav>Contact Me</nav>
+            </div>
+            <div class="nav-link" data-value="2">
+                <nav>Hobby 3</nav>
+            </div>
+            <div class="nav-link" data-value="1">
+                <nav>Hobby 2</nav>
+            </div>
+            <div class="nav-link" data-value="0">
+                <nav>Hobby 1</nav>
+            </div>
+            <div class="nav-link" data-value="4">
+                <nav>Home</nav>
+            </div>
+            <div id="scroll-menu" style="display: none;">
+                <div class="nav-link-mobile" data-value="4">
+                    <nav>Home</nav>
+                </div>
+                <div class="nav-link-mobile" data-value="0">
+                    <nav>Hobby 1</nav>
+                </div>
+                <div class="nav-link-mobile" data-value="1">
+                    <nav>Hobby 2</nav>
+                </div>
+                <div class="nav-link-mobile" data-value="2">
+                    <nav>Hobby 3</nav>
+                </div>
+                <div class="nav-link-mobile" data-value="3">
+                    <nav>Contact Me</nav>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            <div id="hobbies">
+                <div class="hobby" id="hobby1"></div>
+                <div class="hobby" id="hobby2"></div>
+                <div class="hobby" id="hobby3"></div>
+            </div>
+
+            <div id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Message...">
+                    <input type="submit">
+                </form>
+            </div>
+        -->
+        <div id="content">
+            <div class="data" id="page4" style="display: flex;">
+                <div class="page" id="index-div-1">
+                    <div class="page-left" id="index-div-1-left">
+                        <h2>Balaji Karedla</h2>
+                    </div>
+                    <div class="page-right" id="index-div-id-1-right">
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="data" id="page0"></div>
+            <div class="data" id="page1"></div>
+            <div class="data" id="page2"></div>
+            <div class="data" id="page3">
+                
+                <h2 id="contact-me">Contact Me</h2>
+
+                <form id="contact-form" action="https://mail.google.com" target="_blank">
+                    <input type="hidden" name="view" value="cm">
+                    <input type="hidden" name="fs" value="1">
+                    <!-- <input type="hidden" name="compose" value="new"> -->
+                    <input type="hidden" name="to" value="hello@gmail.com">
+                    <!-- <input type="text" placeholder="Name"> -->
+                    <!-- <input type="email" placeholder="Email"> -->
+                    <input type="text" placeholder="Subject" name="su">
+                    <!-- <input type="text" id="message" placeholder="Message..."> -->
+                    <textarea id="message" placeholder="Message..." name="body"></textarea>
+                    <input type="submit" id="submit">
+                </form>
+
+            </div>
+        </div>
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+          </svg></div>
+        <script src="script.js"></script>
+    </body>
+</html>
