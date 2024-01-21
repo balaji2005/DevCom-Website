@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body>
-        <div style="display: flex; flex-direction: column;">
-            <h1>My Portfolio</h1>
-            <div id="nav">
+        <div style="display: flex; flex-direction: row; background-color: rgb(10, 10, 10);">
+            <h2 style="width: 200px">My Portfolio</h2>
+            <div id="nav" style="right: 100vw;">
                 <div id="menu" style="flex-direction: column; align-items: center;justify-content: center;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -31,7 +31,7 @@
                     <nav>Home</nav>
                 </div>
             </div>
-            <div id="scroll-menu" style="display: none; width: 100vh; left: 0; top: 0;">
+            <div id="scroll-menu" style="display: none; width: 100vw; left: 0; top: 0;">
                 <div class="nav-link-mobile" data-value="4">
                     <nav>Home</nav>
                 </div>
@@ -50,23 +50,6 @@
             </div>
         </div>
 
-        <!--
-            <div id="hobbies">
-                <div class="hobby" id="hobby1"></div>
-                <div class="hobby" id="hobby2"></div>
-                <div class="hobby" id="hobby3"></div>
-            </div>
-
-            <div id="contact">
-                <h2>Contact Me</h2>
-                <form id="contact-form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Message...">
-                    <input type="submit">
-                </form>
-            </div>
-        -->
         <div id="content">
             <div class="data" id="page4" style="display: flex;">
                 <div class="page" id="index-div-1">
@@ -89,12 +72,8 @@
                 <form id="contact-form" action="https://mail.google.com" target="_blank">
                     <input type="hidden" name="view" value="cm">
                     <input type="hidden" name="fs" value="1">
-                    <!-- <input type="hidden" name="compose" value="new"> -->
                     <input type="hidden" name="to" value="hello@gmail.com">
-                    <!-- <input type="text" placeholder="Name"> -->
-                    <!-- <input type="email" placeholder="Email"> -->
                     <input type="text" placeholder="Subject" name="su">
-                    <!-- <input type="text" id="message" placeholder="Message..."> -->
                     <textarea id="message" placeholder="Message..." name="body"></textarea>
                     <input type="submit" id="submit">
                 </form>

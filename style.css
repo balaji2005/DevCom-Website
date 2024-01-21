@@ -5,9 +5,8 @@ html, body {
     color: white;
 }
 
-h1 {
+h2 {
     margin-left: 50px;
-    position: fixed;
 }
 
 /* Navigation Links */
@@ -45,29 +44,27 @@ h1 {
     width: 224px;
     background-color: rgb(10, 10, 10);
     height: calc(66*5px);
-    animation: open-menu;
-    animation-duration: 2s;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    /* animation: open-menu;
+    animation-duration: 2s; */
 }
 
-@keyframes open-menu {
+/* @keyframes open-menu {
     from {
         top: -calc(66*5px);
     }
     top {
         top: 75px;
     }
-}
+} */
 
 #nav {
-    /* margin: 10px; */
     background-color: rgb(10, 10, 10);
     display: flex;
     flex-direction: row-reverse;
     padding-right: 2%;
     height: 75px;
-    /* position: fixed; */
     width: -webkit-fill-available;
-    /* height: 40px; */
 }
 
 .nav-link, .nav-link-mobile {
@@ -85,31 +82,24 @@ h1 {
 }
 
 .nav-link-mobile {
-    width: 200px;
+    width: 100%;
+    text-align: center;
     background-color: rgb(10, 10, 10);
 }
 
 .nav-link:hover .nav-link-mobile:hover{
     font-size: 20px;
-    /* text-shadow: 0px 10px 3px rgb(200, 200, 200); */
 }
 
 .nav-link:after, .nav-link-mobile:after{
-    /* border: 1px solid azure;
-    border-radius: 2px; */
     margin-top: 10px;
     content: '';
     display: block;
-    /* animation: select;
-    animation-duration: 500ms; */
-    /* border-bottom: 1px solid azure; */
     width: 100%;
     font-size: 24px;
 }
 
 .nav-link:hover:after, .nav-link-mobile:hover:after{
-    /* border: 1px solid azure;
-    border-radius: 2px; */
     margin-top: 10px;
     content: '';
     display: block;
@@ -125,9 +115,6 @@ h1 {
     margin-bottom: 10px;
     content: '';
     display: block;
-    /* animation: select;
-    animation-duration: 500ms; */
-    /* border-bottom: 1px solid azure; */
     width: 100%;
     font-size: 24px;
 }
@@ -153,45 +140,10 @@ h1 {
     }
 }
 
-/* @keyframes enlarge {
-
-    from {
-        font-size: 19px;
-    }
-
-    to {
-        font-size: 22px;
-    }
-} */
-
 a{
     text-decoration: none;
     color: antiquewhite;
-    /* font-size: 19px; */
 }
-
-/* #hobbies {
-    height: 100000px;
-} */
-
-/* Hobbies */
-
-/* .hobby {
-    margin: 10px;
-    height: 1000px;
-}
-
-#hobby1 {
-    background-color: blue;
-}
-
-#hobby2 {
-    background-color: green;
-}
-
-#hobby3 {
-    background-color: yellow;
-} */
 
 /* Content */
 
@@ -212,6 +164,26 @@ a{
 
 /* Contact Form */
 
+@media screen and (max-width: 800px) {
+    input[type='text'], #message {
+        width: 75%;
+    }
+
+    #message {
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    input[type='text'], #message {
+        width: 600px;
+    }
+
+    #message {
+        height: 500px;
+    }
+}
+
 #contact-me {
     font-size: 40px;
     margin-left: 20px;
@@ -221,12 +193,11 @@ input, #message, #contact-form{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-input[type="text"], input[type="email"] {
-    width: 600px;
+input[type="text"] {
     border: 0;
 }
 
-input[type="text"]:focus-visible, input[type="email"]:focus-visible, textarea:focus-visible {
+input[type="text"]:focus-visible, textarea:focus-visible {
     outline: none;
     
 }
@@ -240,8 +211,6 @@ input {
 }
 
 #message {
-    width: 600px;
-    height: 500px;
     margin: 20px;
     border-radius: 10px;
     padding-left: 20px;
@@ -258,6 +227,8 @@ input {
     width: 100px;
     padding-left: 0;
 }
+
+/* Go To Top */
 
 #myBtn {
     display: none; /* Hidden by default */
