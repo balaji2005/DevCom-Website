@@ -5,7 +5,7 @@ html, body {
     color: white;
 }
 
-h2 {
+#head {
     margin-left: 50px;
 }
 
@@ -45,18 +45,7 @@ h2 {
     background-color: rgb(10, 10, 10);
     height: calc(66*5px);
     border-bottom: 1px solid rgb(200, 200, 200);
-    /* animation: open-menu;
-    animation-duration: 2s; */
 }
-
-/* @keyframes open-menu {
-    from {
-        top: -calc(66*5px);
-    }
-    top {
-        top: 75px;
-    }
-} */
 
 #nav {
     background-color: rgb(10, 10, 10);
@@ -140,11 +129,6 @@ h2 {
     }
 }
 
-a{
-    text-decoration: none;
-    color: antiquewhite;
-}
-
 /* Content */
 
 .data {
@@ -160,7 +144,30 @@ a{
     border-radius: 10px;
     background-color: blueviolet;
     padding: 50px;
+    font-size: 20px;
 }
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (min-width: 1100px) {
+    .page {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #index-div-1-left {
+        width: 25%;
+    }
+}
+
+.page-right, .page-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Contact Form */
 
@@ -228,6 +235,21 @@ input {
     padding-left: 0;
 }
 
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    margin-top: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
 /* Go To Top */
 
 #myBtn {
@@ -252,4 +274,19 @@ input {
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#footer {
+    animation: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
