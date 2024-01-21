@@ -11,7 +11,7 @@ h2 {
 
 /* Navigation Links */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
     .nav-link {
         display: none;
     }
@@ -21,7 +21,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
     .nav-link {
         display: flex;
     }
@@ -38,7 +38,7 @@ h2 {
 #scroll-menu {
     display: none;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     left: calc(100vh - 224px);
     top: 75px;
     width: 224px;
@@ -164,7 +164,7 @@ a{
 
 /* Contact Form */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
     input[type='text'], #message {
         width: 75%;
     }
@@ -174,7 +174,7 @@ a{
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
     input[type='text'], #message {
         width: 600px;
     }
