@@ -24,7 +24,6 @@ function topFunction() {
 }
 
 document.querySelectorAll('.nav-link').forEach(() => {
-	console.log("Hovering")
 	this.addEventListener('mouseenter', e => {element.classList.add(hover); console.log("Hovering")})
 	this.addEventListener('mouseleave', e => element.classList.remove(hover))
 })
@@ -40,7 +39,7 @@ document.querySelectorAll('.nav-link').forEach(() => {
 // 	}
 // }
 
-links = document.querySelectorAll('.nav-link').forEach(link => {
+document.querySelectorAll('.nav-link').forEach(link => {
 	value = link.dataset.value
 	link.onclick = function() {
 		value = this.dataset.value
@@ -62,6 +61,21 @@ document.querySelector('#menu').onclick = () => {
 		menu.style.display = 'none'
 	}
 }
+
+document.querySelectorAll('.nav-link-mobile').forEach(link => {
+	value = link.dataset.value
+	link.onclick = function() {
+		value = this.dataset.value
+		for (i=0; i<5; i++) {
+			if (i == value) {
+				document.querySelector(`#page${i}`).style.display = 'flex'
+			} else {
+				document.querySelector(`#page${i}`).style.display = 'none'
+			}
+		}
+		document.querySelector('#scroll-menu').style.display = 'none'
+	}
+})
 // for (j=0; j<5; j++){
 // 	link = links[j]
 // 	value = link.dataset.value
