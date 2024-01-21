@@ -46,10 +46,12 @@ document.querySelector('#menu').onclick = () => {
 	const menu = document.querySelector('#scroll-menu')
 	if (menu.style.display == 'none') {
 		menu.style.display = 'flex'
+		menu.classList.remove('scroll-up')
 		menu.classList.add('scroll-down')
-
 	} else {
-		menu.style.display = 'none'
+		setTimeout(() => {menu.style.display = 'none'}, 500)
+		menu.classList.remove('scroll-down')
+		menu.classList.add('scroll-up')
 	}
 }
 
@@ -64,6 +66,9 @@ document.querySelectorAll('.nav-link-mobile').forEach(link => {
 				document.querySelector(`#page${i}`).style.display = 'none'
 			}
 		}
-		document.querySelector('#scroll-menu').style.display = 'none'
+		const menu = document.querySelector('#scroll-menu')
+		setTimeout(() => {menu.style.display = 'none'},500)
+		menu.classList.remove('scroll-down')
+		menu.classList.add('scroll-up')
 	}
 })

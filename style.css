@@ -6,7 +6,7 @@ html, body {
 }
 
 #head {
-    margin-left: 50px;
+    padding-left: 50px;
     z-index: 2;
     background-color: rgb(10, 10, 10);
 }
@@ -78,13 +78,15 @@ html, body {
     width: 100%;
     text-align: center;
     background-color: rgb(10, 10, 10);
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
 
-.nav-link:hover .nav-link-mobile:hover{
+.nav-link:hover, .nav-link-mobile:hover{
     font-size: 20px;
 }
 
-.nav-link:after, .nav-link-mobile:after{
+.nav-link:after /*, .nav-link-mobile:after */{
     margin-top: 10px;
     content: '';
     display: block;
@@ -92,7 +94,7 @@ html, body {
     font-size: 24px;
 }
 
-.nav-link:hover:after, .nav-link-mobile:hover:after{
+.nav-link:hover:after /*, .nav-link-mobile:hover:after */{
     margin-top: 10px;
     content: '';
     display: block;
@@ -104,7 +106,7 @@ html, body {
     text-shadow: 0px 10px 3px rgb(200, 200, 200);
 }
 
-.nav-link-mobile:before {
+/* .nav-link-mobile:before {
     margin-bottom: 10px;
     content: '';
     display: block;
@@ -119,7 +121,7 @@ html, body {
     animation: select;
     animation-duration: 500ms;
     border-top: 1px solid azure;
-}
+} */
   
 @keyframes select {
     from {
@@ -287,7 +289,12 @@ input {
 
 .scroll-down {
     animation: scroll-down;
-    animation-duration: 1s;
+    animation-duration: 500ms;
+}
+
+.scroll-up {
+    animation: scroll-up;
+    animation-duration: 500ms;
 }
 
 @keyframes fade-in {
@@ -302,10 +309,20 @@ input {
 
 @keyframes scroll-down {
     from {
-        top : -100px;
+        top: -255px;
     }
 
     to {
         top: 75px;
+    }
+}
+
+@keyframes scroll-up {
+    from {
+        top: 75px;
+    }
+
+    to {
+        top: -255px;
     }
 }
