@@ -9,6 +9,15 @@ html, body {
     padding-left: 50px;
     z-index: 2;
     background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 340px) {
+    #head {
+        font-size: small;
+    }
 }
 
 /* Navigation Links */
