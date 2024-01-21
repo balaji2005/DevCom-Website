@@ -7,6 +7,8 @@ html, body {
 
 #head {
     margin-left: 50px;
+    z-index: 2;
+    background-color: rgb(10, 10, 10);
 }
 
 /* Navigation Links */
@@ -45,6 +47,7 @@ html, body {
     background-color: rgb(10, 10, 10);
     height: calc(66*5px);
     border-bottom: 1px solid rgb(200, 200, 200);
+    z-index: 1;
 }
 
 #nav {
@@ -54,6 +57,7 @@ html, body {
     padding-right: 2%;
     height: 75px;
     width: -webkit-fill-available;
+    z-index: 2;
 }
 
 .nav-link, .nav-link-mobile {
@@ -281,6 +285,11 @@ input {
     animation-duration: 2s;
 }
 
+.scroll-down {
+    animation: scroll-down;
+    animation-duration: 1s;
+}
+
 @keyframes fade-in {
     from {
         opacity: 0%;
@@ -288,5 +297,15 @@ input {
 
     to {
         opacity: 100%;
+    }
+}
+
+@keyframes scroll-down {
+    from {
+        top : -100px;
+    }
+
+    to {
+        top: 75px;
     }
 }

@@ -46,6 +46,8 @@ document.querySelector('#menu').onclick = () => {
 	const menu = document.querySelector('#scroll-menu')
 	if (menu.style.display == 'none') {
 		menu.style.display = 'flex'
+		menu.classList.add('scroll-down')
+
 	} else {
 		menu.style.display = 'none'
 	}
