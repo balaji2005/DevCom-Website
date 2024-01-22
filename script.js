@@ -67,7 +67,7 @@ document.querySelectorAll('.nav-link-mobile').forEach(link => {
 			}
 		}
 		const menu = document.querySelector('#scroll-menu')
-		setTimeout(() => {menu.style.display = 'none'}, 500)
+		setTimeout(() => {menu.style.display = 'none'}, 450)
 		menu.classList.remove('scroll-down')
 		menu.classList.add('scroll-up')
 	}

@@ -176,13 +176,34 @@ html, body {
     }
 }
 
+@media screen and (max-width: 880px) {
+    .page {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .page {
+        flex-direction: row;
+    }
+}
+
 .page-right, .page-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 
+.page {
+    margin: 20px;
+    display: flex;
+}
+
+img {
+    border-radius: 20px;
+}
 
 /* Contact Form */
 
