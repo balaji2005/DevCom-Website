@@ -171,7 +171,7 @@ html, body {
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 10px;
-    background-color: #1f0835;
+    /* background-color: #1f0835; */
     font-size: 20px;
     flex: 1;
 }
