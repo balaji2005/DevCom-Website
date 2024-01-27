@@ -45,11 +45,13 @@ document.querySelectorAll('.nav-link').forEach(link => {
 document.querySelector('#menu').onclick = () => {
 	const menu = document.querySelector('#scroll-menu')
 	if (menu.style.display == 'none') {
+		menu.style.top = "75px"
 		menu.style.display = 'flex'
 		menu.classList.remove('scroll-up')
 		menu.classList.add('scroll-down')
 	} else {
 		setTimeout(() => {menu.style.display = 'none'}, 500)
+		menu.style.top = "-255px"
 		menu.classList.remove('scroll-down')
 		menu.classList.add('scroll-up')
 	}
