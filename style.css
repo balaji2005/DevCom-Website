@@ -11,9 +11,12 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: "Cinzel";
+    color: rgb(215, 211, 241);
+    /* src: url('/fonts/MoiraiOne-Regular.ttf'); */
 }
 
-@media screen and (max-width: 340px) and (min-width: 270px) {
+@media screen and (max-width: 340px) /* and (min-width: 270px) */ {
     #head {
         font-size: small;
         padding-left: 13.33%;
@@ -47,6 +50,14 @@ html, body {
     }
 }
 
+#nav, #scroll-menu {
+    font-family: "Hind Madurai";
+}
+
+#scroll-menu {
+    padding-bottom: 15px;
+}
+
 #menu {
     width: 75px;
     height: 75px;
@@ -71,7 +82,7 @@ html, body {
     flex-direction: row-reverse;
     padding-right: 2%;
     height: 75px;
-    width: -webkit-fill-available;
+    /* width: -webkit-fill-available; */
     z-index: 2;
 }
 
@@ -95,10 +106,6 @@ html, body {
     background-color: rgb(10, 10, 10);
     margin-top: 22px;
     margin-bottom: 22px;
-}
-
-.nav-link:hover, .nav-link-mobile:hover{
-    font-size: 20px;
 }
 
 .nav-link:after /*, .nav-link-mobile:after */{
@@ -141,12 +148,12 @@ html, body {
 @keyframes select {
     from {
         width: 0;
-        font-size: 19px;
+        /* font-size: 19px; */
     }
 
     to {
         width: 100%;
-        font-size: 24px;
+        /* font-size: 24px; */
     }
 }
 
@@ -156,6 +163,7 @@ html, body {
     display: none;
     flex-direction: column;
     width: -webkit-fill-available;
+    font-family: "Playfair Display";
 }
 
 #content {
@@ -213,7 +221,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 5px;
 }
 
 .page {
