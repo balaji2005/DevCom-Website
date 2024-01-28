@@ -11,16 +11,18 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cute%20Font">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind%20Madurai">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Workbench">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="icon" type="image/x-icon" href="images/ice-cream.png">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row; background-color: rgb(10, 10, 10);">
-            <div id="head" style="width: -webkit-fill-available;">
-                <h2>Balaji</h2>
+        <div style="display: flex; flex-direction: row; background-color: rgb(10, 10, 10); align-items: center; margin-top: 10px;" id="header">
+            <div id="head" style="width: -webkit-fill-available; font-size: larger;">
+                <h2 style="margin: 0;">Balaji</h2>
             </div>
-            <div id="nav" style="right: 100vw;">
+            <div id="nav" style="right: 100vw; margin: 0;">
                 <div id="menu" style="flex-direction: column; align-items: center;justify-content: center;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -43,6 +45,7 @@
                 </div>
             </div>
         </div>
+        <hr style="color: white; width: 95vw; opacity: 60%;">
         <div id="scroll-menu" style="display: none; width: 100vw; left: 0; top: 75px;">
             <div class="nav-link-mobile" data-value="4">
                 <nav>Home</nav>
@@ -69,7 +72,7 @@
                     </div> -->
                     <div class="page-right" id="index-div-id-1-right">
                         <p>
-                            Hello! This is Balaji Karedla.<br> I am a fresher at IITB in CS. 
+                            Hello! This is <span id="name" style="font-family: Lora;"></span><br> I am a fresher at IITB in CS. 
                             I am currently exploring different fields to find my interests.
                         </p>
                     </div>
@@ -83,7 +86,6 @@
                 </div>
                 <!-- <div class="page" id="index-div-3">
                     <div class="page-left" id="index-div-3-left">
-                        
                     </div>
                 </div> -->
                 <div class="page" id="index-div-3">
@@ -97,6 +99,9 @@
                 </div>
             </div>
             <div class="data" id="page0">
+                <div class="page">
+                    <h2>Coding</h2>
+                </div>
                 <div class="page" id="coding-div-1">
                     <div class="page-left" id="coding-div-1-left">
                         One of my hobbies is coding..
@@ -112,27 +117,33 @@
                 </div>
             </div>
             <div class="data" id="page1">
-                <div class="page">
-                    As a dedicated enthusiast of sci-fi cinema, my hobby has recently taken an exhilarating turn with the release of Christopher Nolan's highly anticipated film, "Oppenheimer." This latest addition to Nolan's illustrious filmography, exploring the complex legacy of J. Robert Oppenheimer, promises to be a thought-provoking and visually stunning experience.
+                <div>
+                    <h2>Movies</h2>
                 </div>
                 <div class="page">
-                    Diving into the intricate storytelling and mind-bending concepts characteristic of Nolan's work, "Oppenheimer" adds a historical layer to my cinematic journey. The film's exploration of Oppenheimer's pivotal role in the Manhattan Project intertwines scientific innovation with a biographical narrative, offering a unique lens through which to view history.
+                    I'm passionate about exploring the vast realms of imagination through the lens of science fiction, animated, and Pixar movies.
                 </div>
                 <div class="page">
-                    As I engage in discussions and analyses surrounding the film, the fusion of science fiction and historical exploration continues to captivate my imagination. The release of "Oppenheimer" has sparked conversations within the community of enthusiasts, deepening our appreciation for Nolan's ability to intertwine storytelling and intellectual inquiry.
+                    For me, watching these genres isn't just a pastime; it's a journey into uncharted territories of creativity and innovation. Science fiction allows me to contemplate the limitless possibilities of the future, sparking my curiosity and challenging my perceptions. Whether it's futuristic technologies, extraterrestrial encounters, or alternate realities, each film becomes a portal to a world where the boundaries of the known are pushed to their limits.
                 </div>
                 <div class="page">
-                    Sharing this experience with fellow enthusiasts, whether in person or through online forums, amplifies the joy of exploration. Conversations about the nuanced portrayal of Oppenheimer's life and the thematic threads woven by Nolan enhance the social aspect of my cinematic hobby, creating a sense of camaraderie among those who share this passion.
+                    Animated movies, on the other hand, transport me to enchanting realms where the laws of physics take a back seat to the boundless wonders of imagination. The vibrant characters and visually stunning landscapes not only entertain but also inspire. Through animation, I find a unique form of storytelling that has the power to convey complex emotions and profound narratives.
+                </div>                
+                <div class="page">
+                    And then there's Pixar, a studio renowned for its unparalleled storytelling and heartwarming tales. Pixar movies, with their blend of cutting-edge animation and emotionally resonant plots, have a special place in my heart. From the joyous camaraderie of Toy Story to the emotional depth of Up, each film is a masterclass in storytelling and character development.
                 </div>
                 <div class="page">
-                    Whether I'm reflecting on the enigma of dreams in "Inception" or pondering the mysteries of space and time in "Interstellar," the addition of "Oppenheimer" to Nolan's repertoire enriches my cinematic reverie. This film marks not just a release but a new chapter in my ongoing journey through the limitless realms of imagination and intellect—a journey that continues to be fueled by the boundless creativity of Christopher Nolan.
+                    As a fan of these genres, I not only enjoy the cinematic experience but also appreciate the artistry, creativity, and innovation behind each frame. This hobby fuels my own creativity, influencing my perspective and approach in various aspects of life, including my work.
+                </div>
+                <div class="page">
+                    Join me on this journey through the realms of science fiction, animation, and Pixar, where each film is a stepping stone into the boundless landscape of the imagination. Explore with me, and let's embark on a cinematic adventure together!
                 </div>
             </div>
             <div class="data" id="page2">
                 <h2>Chess</h2>
                 <div class="page" id="chess-page-1">
                     <div class="page-left">
-                        <img id="chess-pic" src="chess-1.jpeg" alt="Chess">
+                        <img id="chess-pic" src="images/chess-1.jpeg" alt="Chess">
                     </div>
                     <div class="page-right">
                         Chess, a timeless game of strategy, has become more than just a hobby for me—it's a captivating journey into the depths of intellect and creativity. As I navigate the 64 squares, each move becomes a personal expression in the symphony of a mental ballet.
@@ -189,11 +200,13 @@
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
                 </svg>
             </div>
-            <div>
-                <p></p>
+            <div class="icons" onclick="window.open('https://youtu.be/dQw4w9WgXcQ?si=Q4r4jZ1CEp9X-4l4')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg>
             </div>
         </div>
-        <div onclick="topFunction()" id="myBtn" title="Go to top"   >
+        <div onclick="topFunction()" id="myBtn" title="Go to top">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
             </svg>

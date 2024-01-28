@@ -12,6 +12,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     font-family: "Cinzel";
+    font-size: larger;
     /* color: rgb(215, 211, 241); */
     /* src: url('/fonts/MoiraiOne-Regular.ttf'); */
 }
@@ -59,8 +60,8 @@ html, body {
 }
 
 #menu {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
 }
 
 #scroll-menu {
@@ -68,7 +69,7 @@ html, body {
     flex-direction: column;
     position: absolute;
     left: calc(100vh - 224px);
-    top: 75px;
+    top: 60px;
     width: 224px;
     background-color: rgb(10, 10, 10);
     height: calc(66*5px);
@@ -76,12 +77,17 @@ html, body {
     z-index: 1;
 }
 
+#header {
+    height: 60px;
+}
+
 #nav {
     background-color: rgb(10, 10, 10);
     display: flex;
     flex-direction: row-reverse;
     padding-right: 2%;
-    height: 75px;
+    margin-top: 10px;
+    height: 50px;
     /* width: -webkit-fill-available; */
     z-index: 2;
 }
@@ -99,6 +105,7 @@ html, body {
 
 .nav-link {
     width: 100px;
+    margin: 12px;
 }
 
 .nav-link-mobile {
@@ -341,14 +348,14 @@ input {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
+    background-color: white;/* Set a background color */
+    color: rgb(10, 10, 10); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     /* padding: 15px; Some padding */
     border-radius: 26px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
-    height: 54px;
-    width: 54px;
+    height: 45px;
+    width: 45px;
     align-items: center;
     justify-content: center;
 }
@@ -387,20 +394,20 @@ input {
 
 @keyframes scroll-down {
     from {
-        top: -255px;
+        top: -270px;
     }
 
     to {
-        top: 75px;
+        top: 60px;
     }
 }
 
 @keyframes scroll-up {
     from {
-        top: 75px;
+        top: 60px;
     }
 
     to {
-        top: -255px;
+        top: -270px;
     }
 }
