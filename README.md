@@ -3,6 +3,7 @@
 ## Overview
 
 Welcome to my static portfolio website! This website serves as a showcase of my work, skills, and experiences. It is designed to provide visitors with a glimpse into my professional background and projects. Feel free to explore and learn more about me.
+I made this site for an assignment for selection into DevCom. I did get selected for the second round, So Hooray!!!
 
 ## Table of Contents
 
